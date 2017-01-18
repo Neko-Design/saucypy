@@ -19,16 +19,16 @@ def makeWebRequest(auth, url, payload=''):
         try:
             response = requests.post(url, auth=(auth['userid'], auth['token']), json=payload)
         except:
-            print("Something went wrong posting to" + url)
+            print "Something went wrong posting to" + url
     else:
         try:
             response = requests.get(url, auth=(auth['userid'], auth['token']))
         except:
-            print("Something went wrong making a request to" + url)
+            print "Something went wrong making a request to" + url
     try:
         responseJson = response.json()
     except ValueError:
-        print("Invalid JSON returned")
+        print "Invalid JSON returned"
     return responseJson
 
 def makeApiRequest(auth, api):
@@ -57,5 +57,15 @@ def createUser(auth, userName, password, email, fullName):
     apiResponse = makePostRequest(auth, apiCall, jp)
     return apiResponse
 
+def getBuilds(auth):
+    apiCall = '/' + auth['userid'] + '/builds'
+    apiResponse = makeApiRequest(auth, apiCall)
+    return apiResponse
+
+def getBuild(auth, buildId):
+    apiCall = '/' + auth['userid'] + '/builds/' + buildId
+    apiResponse = makeApiRequest(auth, apiCall)
+    return apiResponse
+
 if __name__ == "__main__":
-    print("SaucyPy Interface to SauceLabs API")
+    print "SaucyPy Interface to SauceLabs API"
