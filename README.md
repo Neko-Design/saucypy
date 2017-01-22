@@ -5,14 +5,16 @@ Python Wrapper for SauceLabs API
 SaucyPy currently supports the below SauceLabs features:
 
 * [Build Information](Docs/builds.md)
+  * List Automated Builds
+  * List Individual Builds
+  * Fuzzy Search for Builds
+* Account Information
   * List Sub-Accounts
   * List Siblng Accounts
-  * List Automated Builds
-* List Individual Builds
-* Fuzzy Search for Builds
-* User Creation
-* User Management
-* SauceLabs Status Information
+  * User Creation
+* Status Information
+  * SauceLabs Status Information
+  * Supported Platforms
 
 ## Usage
 To import SaucyPy, simply copy `saucypy.py` into your project root and then `from saucypy import SaucyPy`
