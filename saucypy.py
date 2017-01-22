@@ -66,6 +66,7 @@ class SaucyPy:
         api_response = self.make_web_request(compiled_url, payload)
         return api_response
 
+    # Account Information Functions
     def get_sub_accounts(self):
         """
         Get SubAccounts
@@ -98,6 +99,7 @@ class SaucyPy:
         api_response = self.make_post_request(api_call, json_packet)
         return api_response
 
+    # Build Information Functions
     def get_builds(self):
         """
         Get Builds
@@ -130,3 +132,24 @@ class SaucyPy:
             if build_string in build['name']:
                 matching_builds.append(build)
         return matching_builds
+
+    # SauceLabs Status Functions
+    def get_sauce_status(self):
+        """
+        Get SauceLabs Status
+        Returns SauceLabs Status information
+        usage: get_sauce_status()
+        """
+        api_call = '/info/status'
+        api_response = self.make_api_request(api_call)
+        return api_response
+
+    def get_sauce_platforms(self):
+        """
+        Get SauceLabs Platforms
+        Returns SauceLabs Available Platforms
+        usage: get_sauce_platforms()
+        """
+        api_call = '/info/platforms/all'
+        api_response = self.make_api_request(api_call)
+        return api_response

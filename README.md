@@ -11,6 +11,7 @@ SaucyPy currently supports the below SauceLabs features:
 * Fuzzy Search for Builds
 * User Creation
 * User Management
+* SauceLabs Status Information
 
 ## Usage
 To import SaucyPy, simply copy `saucypy.py` into your project root and then `from saucypy import SaucyPy`
