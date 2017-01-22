@@ -8,6 +8,9 @@ import json
 import requests
 from requests.auth import HTTPBasicAuth
 
+if __name__ == "__main__":
+    print "SaucyPy Interface to SauceLabs API"
+
 class SaucyPy:
     """
     SaucyPy
@@ -93,4 +96,24 @@ class SaucyPy:
         json_packet = {'username': user_name, 'password': password,
                        'name': full_name, 'email': email}
         api_response = self.make_post_request(api_call, json_packet)
+        return api_response
+
+    def get_builds(self):
+        """
+        Get Builds
+        Lists all builds run from the caller
+        usage: get_builds()
+        """
+        api_call = '/' + self.auth['userid'] + '/builds'
+        api_response = self.make_api_request(api_call)
+        return api_response
+
+    def get_build(self, build_id):
+        """
+        Get Build
+        Returns a single build based on ID or name
+        usage: get_build('build id or name)
+        """
+        api_call = '/' + self.auth['userid'] + '/builds/' + build_id
+        api_response = self.make_api_request(api_call)
         return api_response
