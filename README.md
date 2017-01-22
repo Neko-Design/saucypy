@@ -5,9 +5,9 @@ Python Wrapper for SauceLabs API
 SaucyPy currently supports the below SauceLabs features:
 
 * [Build Information](Docs/builds.md)
-** List Sub-Accounts
-** List Siblng Accounts
-** List Automated Builds
+  * List Sub-Accounts
+  * List Siblng Accounts
+  * List Automated Builds
 * List Individual Builds
 * Fuzzy Search for Builds
 * User Creation

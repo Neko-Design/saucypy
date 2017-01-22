@@ -21,8 +21,8 @@ def render_build(build):
     print '-----'
 
 def main():
-    mlc_sauce = SaucyPy(os.environ['sauceuser'], os.environ['saucepass'])
-    builds = mlc_sauce.get_builds()
+    sauceaccount = SaucyPy(os.environ['sauceuser'], os.environ['saucepass'])
+    builds = sauceaccount.get_builds()
     for build in builds:
         render_build(build)
 
