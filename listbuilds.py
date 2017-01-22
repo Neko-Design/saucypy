@@ -3,9 +3,7 @@
 # Get Build Information for groups
 
 import os
-import saucypy
-
-SAUCE_ACCOUNT = saucypy.auth(os.environ['sauceuser'], os.environ['saucepass'])
+from saucypy import SaucyPy
 
 def time_from_seconds(elapsed):
     mins, secs = divmod(elapsed, 60)
@@ -23,7 +21,8 @@ def render_build(build):
     print '-----'
 
 def main():
-    builds = saucypy.getBuilds(SAUCE_ACCOUNT)
+    mlc_sauce = SaucyPy(os.environ['sauceuser'], os.environ['saucepass'])
+    builds = mlc_sauce.get_builds()
     for build in builds:
         render_build(build)
 
