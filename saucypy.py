@@ -67,11 +67,11 @@ class SaucyPy:
         return api_response
 
     # Account Information Functions
-    def get_sub_accounts(self):
+    def get_child_accounts(self):
         """
         Get SubAccounts
         Lists child accounts of caller
-        usage: get_sub_accounts()
+        usage: get_child_accounts()
         """
         api_call = '/users/' + self.auth['userid'] + '/subaccounts'
         api_response = self.make_api_request(api_call)
