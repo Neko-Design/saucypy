@@ -8,11 +8,11 @@ SaucyPy currently supports the below SauceLabs features:
   * List Automated Builds
   * List Individual Builds
   * Fuzzy Search for Builds
-* Account Information
+* [Account Information](Docs/accounts.md)
   * List Sub-Accounts
   * List Siblng Accounts
   * User Creation
-* Status Information
+* [Status Information](Docs/status.md)
   * SauceLabs Status Information
   * Supported Platforms
 
