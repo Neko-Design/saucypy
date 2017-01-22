@@ -117,3 +117,16 @@ class SaucyPy:
         api_call = '/' + self.auth['userid'] + '/builds/' + build_id
         api_response = self.make_api_request(api_call)
         return api_response
+
+    def search_builds(self, build_string):
+        """
+        Search Build
+        Returns all builds matching a name search
+        usage: search_builds('build name fragment')
+        """
+        all_builds = self.get_builds()
+        matching_builds = []
+        for build in all_builds:
+            if build_string in build['name']:
+                matching_builds.append(build)
+        return matching_builds
