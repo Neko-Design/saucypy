@@ -1,3 +1,4 @@
 *.pyc
 /creds
 .DS_Store
+.pypirc
