@@ -2,3 +2,5 @@
 /creds
 .DS_Store
 .pypirc
+dist/
+*.egg-info
