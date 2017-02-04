@@ -2,7 +2,7 @@
 
 # SaucyPy Interface to SauceLabs API
 # Written by Ewen McCahon, 2016
-# Version 0.0.6
+# Version 0.__VER_TAG__
 
 import json
 import requests
