@@ -6,7 +6,7 @@ setup(
     install_requires=[
         'requests'
     ],
-    version='0.4',
+    version='0.5',
     description='SauceLabs API Python Wrapper',
     author='Ewen McCahon',
     author_email='ewen.m.mccahon@student.uts.edu.au',
