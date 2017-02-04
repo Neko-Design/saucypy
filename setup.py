@@ -4,7 +4,6 @@ setup(
     name='saucypy',
     packages=['saucypy'],
     install_requires=[
-        'json',
         'requests'
     ],
     version='0.3',
