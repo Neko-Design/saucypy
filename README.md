@@ -16,6 +16,11 @@ SaucyPy currently supports the below SauceLabs features:
   * SauceLabs Status Information
   * Supported Platforms
 
+## Installation
+To install SaucyPy, you can simply run `pip install saucypy` to automatically download the latest build.
+
+Alternatively, you can clone this git repo and copy the saucypy directory into your project.
+
 ## Usage
 To import SaucyPy, simply copy `saucypy.py` into your project root and then `from saucypy import SaucyPy`
 
@@ -28,7 +33,7 @@ Alternatively, if you have your credentials in the environment, such as when run
 ```sauceaccount = SaucyPy(os.environ['sauceuser'], os.environ['saucepass'])```
 
 ## Plans
-At the moment, SaucyPy isn't available in PIP, but I plan to polish it and create a module quite soon. Feel free to add a pull request if you'd like to contribute.
+I'll try and commit new features regularly to bring SaucyPy up to feature parity with the main SauceLabs API. Feel free to add a pull request if you'd like to contribute.
 
 ## License
 Licensed under v2.0 of the Apache License. Please read the attached license contained within the `LICENSE` file in this directory.
