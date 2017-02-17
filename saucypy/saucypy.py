@@ -119,6 +119,26 @@ class SaucyPy:
         api_call = '/' + self.auth['userid'] + '/builds/' + build_id
         api_response = self.make_api_request(api_call)
         return api_response
+    
+    def get_build_detail(self, build_id, full=False):
+        """
+        Get Build Details
+        Returns a detailed dictionary of build information
+        usage: get_build_detail('build id', 'detailed bool')
+        """
+        api_call = '/builds/' + build_id + "/jobs?full" + str(full)
+        api_response = self.make_api_request(api_call)
+        return api_response
+
+    def get_job_detail(self, job_id, full=False):
+        """
+        Get Job Details
+        Returns a detailed dictionary of job information
+        usage: get_job_detail('job id', 'detailed bool')
+        """
+        api_call = '.1/jobs/' + job_id + "?full=" + str(full)
+        api_response = self.make_api_request(api_call)
+        return api_response
 
     def search_builds(self, build_string):
         """
