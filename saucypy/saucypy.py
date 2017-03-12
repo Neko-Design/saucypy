@@ -2,7 +2,7 @@
 
 # SaucyPy Interface to SauceLabs API
 # Written by Ewen McCahon, 2016
-# Version 0.__VER_TAG__
+# Version 0.0.7
 
 import json
 import requests
@@ -119,7 +119,7 @@ class SaucyPy:
         api_call = '/' + self.auth['userid'] + '/builds/' + build_id
         api_response = self.make_api_request(api_call)
         return api_response
-    
+
     def get_build_detail(self, build_id, full=False):
         """
         Get Build Details
