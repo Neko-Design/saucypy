@@ -36,11 +36,17 @@ To import SaucyPy, simply copy `saucypy.py` into your project root and then `fro
 
 When using the library, you must create each sauce object with its own user credentials, like so:
 
-```sauceaccount = SaucyPy('SauceUser', 'SauceAPIKey')```
+`sauceaccount = SaucyPy('SauceUser', 'SauceAPIKey')`
 
 Alternatively, if you have your credentials in the environment, such as when running in jenkins or storing configs in an SCM, you can import these by running
 
-```sauceaccount = SaucyPy(os.environ['sauceuser'], os.environ['saucepass'])```
+`sauceaccount = SaucyPy(os.environ['sauceuser'], os.environ['saucepass'])`
+
+## Projects Using SaucyPy
+For some inspiration of what you can do with SaucyPy, here's a few projects built using it.
+
+### SaucyBot
+SaucyBot can be triggered to pull information from SauceLabs and Cucumber and send a compact report to a Slack channel.
 
 ## Plans
 I'll try and commit new features regularly to bring SaucyPy up to feature parity with the main SauceLabs API. Feel free to add a pull request if you'd like to contribute.
