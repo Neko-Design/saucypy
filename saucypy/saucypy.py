@@ -19,6 +19,10 @@ if __name__ == "__main__":
                             
     SaucyPy Interface to SauceLabs API
     Written by Ewen McCahon. Updated March 2017
+    https://github.com/Neko-Design/saucypy
+    
+    For examples and help please see the docs
+    available in the Readme on GitHub.
     """
 
 class SaucyPy:
