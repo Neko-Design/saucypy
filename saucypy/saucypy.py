@@ -9,7 +9,17 @@ import requests
 from requests.auth import HTTPBasicAuth
 
 if __name__ == "__main__":
-    print "SaucyPy Interface to SauceLabs API"
+    print """
+     ____                         ____        
+    / ___|  __ _ _   _  ___ _   _|  _ \ _   _ 
+    \___ \ / _` | | | |/ __| | | | |_) | | | |
+     ___) | (_| | |_| | (__| |_| |  __/| |_| |
+    |____/ \__,_|\__,_|\___|\__, |_|    \__, |
+                            |___/       |___/ 
+                            
+    SaucyPy Interface to SauceLabs API
+    Written by Ewen McCahon. Updated March 2017
+    """
 
 class SaucyPy:
     """
