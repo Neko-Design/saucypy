@@ -48,6 +48,8 @@ For some inspiration of what you can do with SaucyPy, here's a few projects buil
 ### SaucyBot
 SaucyBot can be triggered to pull information from SauceLabs and Cucumber and send a compact report to a Slack channel.
 
+![SaucyBot Screenshot](https://ewenmccahon.me/cloud/files/a4effe6df4.png)
+
 ## Plans
 I'll try and commit new features regularly to bring SaucyPy up to feature parity with the main SauceLabs API. Feel free to add a pull request if you'd like to contribute.
 
