@@ -1,3 +1,4 @@
+# SaucyPy
 ```
  ____                         ____        
 / ___|  __ _ _   _  ___ _   _|  _ \ _   _ 
@@ -6,8 +7,6 @@
 |____/ \__,_|\__,_|\___|\__, |_|    \__, |
                         |___/       |___/ 
 ```
-
-# SaucyPy
 Python Wrapper for SauceLabs API
 
 ## Available Functions
