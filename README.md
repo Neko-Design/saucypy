@@ -35,7 +35,7 @@ Alternatively, if you have your credentials in the environment, such as when run
 `sauceaccount = SaucyPy(os.environ['sauceuser'], os.environ['saucepass'])`
 
 ## Documentation
-[SaucyPy Documentation](https://docs.ewenmccahon.me/saucypy/) is available both in this readme file and on my personal site in an easy to read format. The hosted version is located at [https://docs.ewenmccahon.me/saucypy/](https://docs.ewenmccahon.me/saucypy/)
+[SaucyPy Documentation](https://docs.ewenmccahon.me/saucypy/) is available both in this repo under the 'docs' directory, and on my personal site in an easy to read format. The hosted version is located at [https://docs.ewenmccahon.me/saucypy/](https://docs.ewenmccahon.me/saucypy/)
 
 ## Projects Using SaucyPy
 For some inspiration of what you can do with SaucyPy, here's a few projects built using it.
