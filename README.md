@@ -1,13 +1,5 @@
 # SaucyPy
-```
- ____                         ____        
-/ ___|  __ _ _   _  ___ _   _|  _ \ _   _ 
-\___ \ / _` | | | |/ __| | | | |_) | | | |
- ___) | (_| | |_| | (__| |_| |  __/| |_| |
-|____/ \__,_|\__,_|\___|\__, |_|    \__, |
-                        |___/       |___/ 
-```
-Python Wrapper for SauceLabs API
+Python Wrapper for SauceLabs API. [Nice Documentation is Now Available!](https://docs.ewenmccahon.me/saucypy/)
 
 ## Available Functions
 SaucyPy currently supports the below SauceLabs features:
@@ -41,6 +33,9 @@ When using the library, you must create each sauce object with its own user cred
 Alternatively, if you have your credentials in the environment, such as when running in jenkins or storing configs in an SCM, you can import these by running
 
 `sauceaccount = SaucyPy(os.environ['sauceuser'], os.environ['saucepass'])`
+
+## Documentation
+[SaucyPy Documentation](https://docs.ewenmccahon.me/saucypy/) is available both in this readme file and on my personal site in an easy to read format. The hosted version is located at [https://docs.ewenmccahon.me/saucypy/](https://docs.ewenmccahon.me/saucypy/)
 
 ## Projects Using SaucyPy
 For some inspiration of what you can do with SaucyPy, here's a few projects built using it.
