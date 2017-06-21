@@ -100,6 +100,19 @@ class SaucyPy:
         api_call = '/users/' + self.auth['userid'] + '/siblings'
         api_response = self.make_api_request(api_call)
         return api_response
+    
+    def get_account_usage(self, ts_start=None):
+        """
+        Get Account Usage
+        Detailed information about VM usage
+        usage: get_account_usage()
+        """
+        api_route = "/activity?level=user"
+        if ts_start is not None:
+            api_route = api_route + "&_ts=" + str(ts_start)
+        api_call = '/users/' + self.auth['userid'] + api_route
+        api_response = self.make_api_request(api_call)
+        return api_response
 
     def create_user(self, user_name, password, email, full_name):
         """
